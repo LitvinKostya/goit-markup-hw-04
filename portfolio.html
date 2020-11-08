@@ -4,36 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="border">
-      <div class="container">
+      <div class="container test">
         <nav class="container-list">
           <a href="" class="logo-header">Web<span class="studio-cl-1">Studio</span></a>
+
           <ul class="list site-nav">
-            <li class="item-header"><a href="./index.html" class="link menu-link">Студия</a></li>
-            <li class="item-header"><a href="" class="link menu-link">Портфолио</a></li>
+            <li class="item-header"><a href="" class="link menu-link">Студия</a></li>
+            <li class="item-header"><a href="./portfolio.html" class="link menu-link">Портфолио</a></li>
             <li class="item-header"><a href="" class="link menu-link">Контакты</a></li>
           </ul>
-          <ul class="list container-contacts">
-            <li class="item-header">
-              <a href="mailto:info@devstudio.com" class="link header-mail">info@devstudio.com</a>
-            </li>
-            <li class="item-header">
-              <a href="tel:+380961111111" class="link header-cont">+38 096 111 11 11</a>
-            </li>
-          </ul>
         </nav>
+
+        <ul class="list container-contacts">
+          <li class="item-header mail-top">
+            <a href="mailto:info@devstudio.com" class="link header-mail">
+              <svg class="mail-svg" height="12px" widt="16px">
+                <use class="mail-svg-hover" href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item-header contacts-top">
+            <a href="tel:+380961111111" class="link header-cont">
+              <svg class="contacts-svg" height="16px" widt="10px">
+                <use class="contacts-svg-hover" href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -133,18 +139,44 @@
       </section>
     </main>
 
-    <footer class="footer-bg">
-      <div class="container logo-box">
-        <a href="" class="logo-footer">Web<span class="studio-cl-2">Studio</span></a>
-        <ul class="list footer-contacts">
-          <li>
-            <a href="https://goo.gl/maps/iy1b7neh667iBxJK8" class="link footer-target">
-              г. Киев, пр-т Леси Украинки, 26
-            </a>
-          </li>
-          <li><a href="mailto:info@devstudio.com" class="link footer-mail">info@example.com</a></li>
-          <li><a href="tel:+380961111111" class="link footer-tel">+38 099 111 11 11</a></li>
-        </ul>
+    <footer class="footer-bg logo-box">
+      <div class="container footer-flex">
+        <div class="none">
+          <a href="" class="logo-footer">Web<span class="studio-cl-2">Studio</span></a>
+          <address>
+            <ul class="list footer-contacts">
+              <li>
+                <a href="https://goo.gl/maps/iy1b7neh667iBxJK8" class="link footer-target"> г. Киев, пр-т Леси Украинки, 26 </a>
+              </li>
+              <li><a href="mailto:info@devstudio.com" class="link footer-mail">info@example.com</a></li>
+              <li><a href="tel:+380961111111" class="link footer-tel">+38 099 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="socialnetworcs socialnetworcs-footer">
+          <h2 class="socialnetworcs-title">Присоединяйтесь</h2>
+          <a class="socialnetworks-links-footer" href="https://instagram.com/" target="_blank" rel="noopener noreferer" aria-label="ccылка Instagram">
+            <svg class="socialnetworks-icon-footer">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a class="socialnetworks-links-footer" href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="ссылка Twitter">
+            <svg class="socialnetworks-icon-footer">
+              <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="socialnetworks-links-footer" href="https://facebook.com/" target="_blank" rel="noopener noreferer" aria-label="ссылка Facebook">
+            <svg class="socialnetworks-icon-footer">
+              <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a class="socialnetworks-links-footer" href="https://linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="ссылка Linkedin">
+            <svg class="socialnetworks-icon-footer">
+              <use href="./images/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
   </body>
