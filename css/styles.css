@@ -411,6 +411,7 @@ address {
 .team-box {
   padding-bottom: 94px;
   padding-top: 94px;
+  background-color: var(--team-bg-cl);
 }
 .team {
   text-align: center;
